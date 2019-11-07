@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exercise1</string>
+    <string name="price" />
+    <string name="down" />
+    <string name="Loanp" />
+    <string name="rate" />
+    <string name="interest_rate">Interest rate</string>
+    <string name="car_price">Car Price</string>
+    <string name="down_payment_amount">Down payment Amount</string>
+    <string name="loan_period">Loan Period</string>
+</resources>

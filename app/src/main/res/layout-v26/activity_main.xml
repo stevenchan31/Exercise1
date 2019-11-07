@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/interest_rate"
+        android:inputType="number"
+        android:text="@string/rate"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sub"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/car_price"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/down"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="@string/price" />
+
+    <EditText
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/down_payment_amount"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/Loan"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:text="@string/down" />
+
+    <EditText
+        android:id="@+id/Loan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/loan_period"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/Rate"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:text="@string/Loanp" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/CarLoan"
+        tools:layout_editor_absoluteX="125dp" />
+
+    <TextView
+        android:id="@+id/CarLoan"
+        android:layout_width="228dp"
+        android:layout_height="43dp"
+        android:text="Car Loan"
+        app:layout_constraintBottom_toTopOf="@+id/Interest"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <TextView
+        android:id="@+id/Interest"
+        android:layout_width="235dp"
+        android:layout_height="37dp"
+        android:text="Interest"
+        app:layout_constraintTop_toBottomOf="@+id/CarLoan"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <TextView
+        android:id="@+id/Repayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly repayment"
+        app:layout_constraintTop_toBottomOf="@+id/Interest"
+        tools:layout_editor_absoluteX="2dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
