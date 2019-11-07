@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
         var interest = carloan.toDouble() * (loanp.toDouble()/100) * rate.toDouble()
         var repayment = (carloan.toDouble() + interest.toDouble()) / loanp.toDouble() / 12
 
-        CarLoan.text="%.2f".format(carloan.toDouble()).toString()
-        Interest.text="%.2f".format(interest.toDouble()).toString()
-        Repayment.text="%.2f".format(repayment.toDouble()).toString()
+        CarLoan.text="RM:%.2f".format(carloan.toDouble()).toString()
+        Interest.text="RM:%.2f".format(interest.toDouble()).toString()
+        Repayment.text="RM:%.2f".format(repayment.toDouble()).toString()
 
     }
 
